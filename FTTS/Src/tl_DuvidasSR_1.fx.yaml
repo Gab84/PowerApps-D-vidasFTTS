@@ -1,0 +1,422 @@
+"tl_DuvidasSR_1 As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
+    BackgroundImage: =
+    ImagePosition: =ImagePosition.Fill
+
+    Image10_3 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =166
+        Image: =Imagem2
+        ImagePosition: =ImagePosition.Fill
+        Width: =640
+        ZIndex: =1
+
+    Image1 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =1136
+        Image: =imagem
+        ImagePosition: =ImagePosition.Fill
+        Visible: =false
+        Width: =640
+        ZIndex: =5
+
+    IconRefresh1_1 As icon.Reload:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =88
+        Icon: =Icon.Reload
+        OnSelect: =Refresh('Dúvidas – Saúde e Segurança FTTS')
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        PressedFill: =RGBA(255, 255, 255, 0.3)
+        TabIndex: =0
+        Tooltip: ="Atualizar lista"
+        Width: =88
+        X: =464
+        ZIndex: =6
+
+    IconNewItem1_1 As icon.Add:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =88
+        Icon: =Icon.Add
+        OnSelect: =NewForm(forml_AnotaDuvida);Navigate(tl_AnotaDuvidas)
+        PaddingBottom: =24
+        PaddingLeft: =24
+        PaddingRight: =24
+        PaddingTop: =24
+        PressedFill: =RGBA(255, 255, 255, 0.3)
+        TabIndex: =0
+        Tooltip: ="Criar novo item"
+        Width: =88
+        X: =Parent.Width - Self.Width
+        ZIndex: =7
+
+    FormViewer1 As formViewer:
+        BorderThickness: =2
+        DataSource: ='Dúvidas – Saúde e Segurança FTTS'
+        Height: =757
+        Item: =Galeria_Perguntas.Selected
+        SnapToColumns: =false
+        Width: =545
+        X: =44
+        Y: =204
+        ZIndex: =8
+
+        Data_DataCard6 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Data"
+            Default: =ThisItem.Data
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Dúvidas – Saúde e Segurança FTTS'],DataSourceInfo.DisplayName,Data)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =85
+            Required: =false
+            Width: =543
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+            DataCardKey43 As label:
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =44
+                Size: =19
+                Text: ="Criado em"
+                Width: =543
+                Wrap: =false
+                Y: =27
+                ZIndex: =1
+
+            DataCardValue38 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =24
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =Parent.Default
+                Width: =118
+                X: =413
+                Y: =37
+                ZIndex: =2
+
+        Status_DataCard6 As typedDataCard.comboBoxViewCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Status"
+            Default: =ThisItem.Status
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Dúvidas – Saúde e Segurança FTTS'],DataSourceInfo.DisplayName,Status)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =57
+            Required: =false
+            Update: =DataCardValue39.Selected
+            Width: =544
+            X: =0
+            Y: =1
+            ZIndex: =7
+
+            DataCardKey44 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =48
+                Size: =19
+                Text: ="Situação da resposta"
+                Width: =473
+                Wrap: =false
+                ZIndex: =1
+
+            DataCardValue39 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =37
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Items: =Choices([@'Dúvidas – Saúde e Segurança FTTS'].Status)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Dúvidas – Saúde e Segurança FTTS'.Status,DataCardValue39.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectMultiple: =false
+                Size: =15
+                Width: =124
+                X: =419
+                Y: =5
+                ZIndex: =2
+
+            ErrorMessage41 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue39.Y + DataCardValue39.Height
+                ZIndex: =3
+
+            StarVisible41 As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 89, 178, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey44.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey44.Y
+                ZIndex: =4
+
+        Dúvida_DataCard5 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="D_x00fa_vida"
+            Default: =ThisItem.Dúvida
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Dúvidas – Saúde e Segurança FTTS'],DataSourceInfo.DisplayName,Dúvida)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =229
+            Required: =true
+            Width: =544
+            X: =0
+            Y: =2
+            ZIndex: =7
+
+            DataCardKey42 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =48
+                Size: =19
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =9
+                Y: =3
+                ZIndex: =1
+
+            DataCardValue37 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =135
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =Parent.Default
+                VerticalAlign: =VerticalAlign.Top
+                Width: =497
+                X: =24
+                Y: =64
+                ZIndex: =2
+
+        Resposta_DataCard5 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Resposta"
+            Default: =ThisItem.Resposta
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Dúvidas – Saúde e Segurança FTTS'],DataSourceInfo.DisplayName,Resposta)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =383
+            Required: =false
+            Width: =544
+            X: =0
+            Y: =3
+            ZIndex: =7
+
+            DataCardKey45 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =48
+                Size: =19
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =13
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue40 As label:
+                BorderThickness: =50
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =281
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =ThisItem.Resposta
+                VerticalAlign: =VerticalAlign.Top
+                Width: =492
+                X: =26
+                Y: =70
+                ZIndex: =2
+
+            DataCardValue40_1 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =48
+                Size: =15
+                Text: |-
+                    =If(
+                        IsBlank(ThisItem.Resposta),
+                        "(Ainda sem Resposta)",
+                        "Respondido em "&Text(
+                            ThisItem.Modificado,
+                            "dd/mm/yyyy"
+                        )
+                    )
+                Width: =300
+                X: =224
+                Y: =10
+                ZIndex: =3
+
+            Rectangle3 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =306
+                Width: =510
+                X: =13
+                Y: =58
+                ZIndex: =4
+
+    Icon1_2 As icon.ChevronLeft:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 55, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =48
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(tl_DuvidasSR)
+        Width: =57
+        X: =18
+        Y: =20
+        ZIndex: =9
+
+    Rectangle3_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =4
+        Width: =545
+        X: =44
+        Y: =272
+        ZIndex: =10
+
+    Rectangle3_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =4
+        Width: =545
+        X: =44
+        Y: =342
+        ZIndex: =11
+
+    Rectangle3_3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =2
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =168
+        Width: =518
+        X: =56
+        Y: =400
+        ZIndex: =12
+
+    Image7_4 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =131
+        Image: =Imagem2
+        ImagePosition: =ImagePosition.Fill
+        Width: =640
+        Y: =1005
+        ZIndex: =13
+
+    Image6_4 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =144
+        Image: =Imagem1
+        Width: =230
+        X: =77
+        Y: =992
+        ZIndex: =14
+
+    Image8_4 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =62
+        Image: =Imagem3
+        ImagePosition: =ImagePosition.Center
+        Width: =134
+        X: =485
+        Y: =1039
+        ZIndex: =15
+
+    Image13_4 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =131
+        Image: =Imagem7
+        Width: =281
+        Y: =1005
+        ZIndex: =16
+

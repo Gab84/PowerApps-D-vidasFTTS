@@ -1,0 +1,13 @@
+App As appinfo:
+    BackEnabled: =true
+    Formulas: =pageid = 'OneNote(Business)'.'OneNote(Business)'.GetPageContent(Dropdown1.SelectedText.Key,Dropdown1_1.SelectedText.id,Dropdown1_2.SelectedText.id,)
+    StartScreen: =tl_Inicial
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
