@@ -1,0 +1,31 @@
+{
+  "76ffc1fa-2deb-4031-bc71-b455ac5048c1": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://arcelormittal-my.sharepoint.com/personal/gabriel_s_rodrigues_arcelormittal_com_br": {
+        "dataSources": {
+          "Dúvidas – Saúde e Segurança FTTS": {
+            "tableName": "a6c74a94-5c0b-4ca2-8abf-e79802979e05"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Dúvidas – Saúde e Segurança FTTS"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "76ffc1fa-2deb-4031-bc71-b455ac5048c1"
+  }
+}

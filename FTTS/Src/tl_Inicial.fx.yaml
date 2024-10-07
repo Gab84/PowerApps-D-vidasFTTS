@@ -1,0 +1,185 @@
+tl_Inicial As screen:
+    BackgroundImage: =
+    ImagePosition: =ImagePosition.Fill
+
+    Image11 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =152
+        Image: =Imagem2
+        ImagePosition: =ImagePosition.Fill
+        Width: =640
+        ZIndex: =2
+
+    Image4 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =1136
+        Image: =imagem
+        ImagePosition: =ImagePosition.Fill
+        Visible: =false
+        Width: =640
+        ZIndex: =3
+
+    tx_user As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =78
+        Italic: =true
+        Size: =25
+        Text: ="Olá, " & User().FullName &" !"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =379
+        X: =54
+        Y: =37
+        ZIndex: =4
+
+    img_user As image:
+        BorderColor: =RGBA(255, 55, 0, 1)
+        BorderThickness: =1
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =140
+        Image: =User().Image
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Width: =140
+        X: =453
+        ZIndex: =5
+
+    tx_saudacao As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =145
+        Size: =25
+        Text: |-
+            ="UM BOM DIA COM SEGURANÇA.
+            BEM VINDO A CENTRAL DE ESCLARECIMENTO"
+        Width: =593
+        X: =26
+        Y: =292
+        ZIndex: =6
+
+    bt_AnD As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 55, 0, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =108
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
+        OnSelect: =Navigate(tl_AnotaDuvidas)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Deixe sua duvida"
+        Width: =296
+        X: =173
+        Y: =516
+        ZIndex: =7
+
+    bt_DSR As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 55, 0, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =108
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
+        OnSelect: =Navigate(tl_DuvidasSR)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Perguntas já feitas"
+        Width: =296
+        X: =173
+        Y: =679
+        ZIndex: =8
+
+    bt_DSR_1 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 55, 0, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =108
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
+        OnSelect: =Navigate(tl_DuvidasCR)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Perguntas já respondidas"
+        Width: =296
+        X: =173
+        Y: =829
+        ZIndex: =9
+
+    Image7 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =131
+        Image: =Imagem2
+        ImagePosition: =ImagePosition.Fill
+        Width: =640
+        Y: =1005
+        ZIndex: =10
+
+    Image6 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =144
+        Image: =Imagem1
+        Width: =230
+        X: =77
+        Y: =992
+        ZIndex: =11
+
+    Image8 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =62
+        Image: =Imagem3
+        ImagePosition: =ImagePosition.Center
+        Width: =134
+        X: =485
+        Y: =1039
+        ZIndex: =12
+
+    Image13 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =131
+        Image: =Imagem7
+        Width: =281
+        Y: =1005
+        ZIndex: =13
+

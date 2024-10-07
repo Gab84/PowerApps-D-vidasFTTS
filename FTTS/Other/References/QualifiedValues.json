@@ -1,0 +1,16 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_crc2c_novatabela_forms",
+      "Namespace": "Novas tabelas (Formulários)",
+      "Values": {
+        "Informações": "3b9854e0-3ab1-44bb-a93d-be9e162d173f"
+      }
+    },
+    {
+      "Kind": "default.cds_appmodule_forms",
+      "Namespace": "Aplicativos controlados por modelos (Formulários)",
+      "Values": {}
+    }
+  ]
+}
