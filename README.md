@@ -18,8 +18,6 @@ Caso o funcionário utilize a opção "Não Listado", a dúvida será revisada p
 
 ![image.png](Read.me/image%201.png)
 
-![image.png](Read.me/image%202.png)
-
 **2. Tela de Consultar Perguntas Pendentes**
 
 De volta à tela inicial, ao acessar a opção de "Perguntas com Pendências", o usuário visualiza uma lista de dúvidas ainda não respondidas. Essa tela permite que o funcionário filtre as perguntas por vários critérios, como dúvida específica, assunto, unidade, ou pelo nome de quem a formulou. Além disso, as perguntas podem ser organizadas da mais recente à mais antiga, ou vice-versa, facilitando a navegação e localização de informações.
