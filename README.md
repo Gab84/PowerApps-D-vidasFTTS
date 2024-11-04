@@ -8,7 +8,7 @@ Com a possibilidade de armazenar essas dúvidas de forma organizada e acessível
 
 Portanto, ao unir simplicidade e propósito, esse aplicativo não só aprimora a comunicação entre os funcionários e a equipe de segurança, mas também atua como um importante recurso de melhoria contínua, contribuindo para a eficiência e segurança do ambiente de trabalho de maneira prática e intuitiva.
 
-![image.png](image.png)
+![image.png](Read.me/image.png)
 
 **1. Tela de Registro de Dúvidas**
 
