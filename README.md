@@ -16,9 +16,9 @@ Ao selecionar o botão "Deixe sua dúvida", o usuário é direcionado a uma tela
 
 Caso o funcionário utilize a opção "Não Listado", a dúvida será revisada pela equipe de gestão de saúde e segurança. Se necessário, a dúvida será realocada para uma categoria existente ou servirá como base para a criação de uma nova categoria, garantindo que o aplicativo se adapte continuamente às necessidades de segurança dos funcionários. Todas as dúvidas são armazenadas com registro de autor, data de envio, e categoria, para que a gestão tenha acesso completo a essas informações e possa responder com agilidade.
 
-![image.png](image%201.png)
+![image.png](Read.me/image%201.png)
 
-![image.png](image%202.png)
+![image.png](Read.me/image%202.png)
 
 **2. Tela de Consultar Perguntas Pendentes**
 
@@ -26,11 +26,11 @@ De volta à tela inicial, ao acessar a opção de "Perguntas com Pendências", o
 
 Ao expandir uma pergunta pendente, o usuário vê os detalhes da dúvida, incluindo a data de criação, o status atual, e o campo de resposta, que permanece vazio até que alguém o complete. A interface permite que qualquer funcionário que tenha uma resposta ou informação relevante possa contribuir. Após redigir a resposta, o usuário pode salvá-la e enviar, ou, se preferir, cancelar a ação, mantendo a dúvida sem resposta.
 
-![image.png](image%203.png)
+![image.png](Read.me/image%203.png)
 
-![image.png](image%204.png)
+![image.png](Read.me/image%204.png)
 
-![image.png](image%205.png)
+![image.png](Read.me/image%205.png)
 
 **3. Tela de Consultar Perguntas Respondidas**
 
@@ -38,8 +38,8 @@ Na seção de "Perguntas Respondidas", o usuário acessa uma tela semelhante à 
 
 Ao expandir uma dúvida respondida, o usuário vê todos os detalhes relevantes, como a descrição da dúvida, a resposta já fornecida, a identificação de quem respondeu, e a data em que a resposta foi enviada. Para manter a integridade das informações, somente os gestores de segurança podem editar ou invalidar respostas já publicadas, garantindo que todas as informações disponíveis na tela de dúvidas respondidas permaneçam precisas e confiáveis.
 
-![image.png](image%206.png)
+![image.png](Read.me/image%206.png)
 
-![image.png](image%207.png)
+![image.png](Read.me/image%207.png)
 
 Essas telas, projetadas com simplicidade e acessibilidade em mente, garantem que todos os funcionários possam consultar e registrar dúvidas de forma eficiente, melhorando o fluxo de informações sobre segurança e fortalecendo a cultura de um ambiente de trabalho seguro e colaborativo.
